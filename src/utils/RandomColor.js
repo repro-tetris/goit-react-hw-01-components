@@ -1,3 +1,8 @@
+const MIN = 0.7;
+const MAX = 1;
+
 export const RandomColor = () => {
-  return Math.floor(Math.random() * 16777215).toString(16);
+  return Math.floor((Math.random() * (MAX - MIN) + MIN) * 16777215).toString(
+    16
+  );
 };
