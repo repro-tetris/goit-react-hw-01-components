@@ -1,8 +1,11 @@
-.friendList {
+import styled from "@emotion/styled";
+
+export const Friends = styled.ul`
   display: flex;
   flex-direction: column;
-}
-.item {
+`;
+
+export const Friend = styled.li`
   display: flex;
   background-color: white;
   width: 250px;
@@ -11,22 +14,22 @@
   align-items: center;
   box-shadow: 0 2px 5px gray;
   border-radius: 5px;
-}
-.status {
+`;
+
+export const Status = styled.span`
   display: block;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: red;
+  background-color: ${(props) => (props.isOnline ? "green" : "red")};
   margin-right: 10px;
-}
-.online {
-  background-color: green;
-}
-.avatar {
+`;
+
+export const Avatar = styled.img`
   margin-right: 10px;
-}
-.name {
+`;
+
+export const Name = styled.p`
   font-weight: 700;
   font-size: 20px;
-}
+`;

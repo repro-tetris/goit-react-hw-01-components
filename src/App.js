@@ -12,7 +12,7 @@ import transactions from "./transactions.json";
 function App() {
   return (
     <div className="App">
-      <LessonContainer title="social-profile" paddings={30}>
+      <LessonContainer title="Social Profile">
         <Profile
           name={user.name}
           tag={user.tag}
@@ -21,14 +21,14 @@ function App() {
           stats={user.stats}
         />
       </LessonContainer>
-      <LessonContainer title="statistic" paddings={30}>
+      <LessonContainer title="Statistic">
         <Statistics title="Upload stats" stats={statisticalData} />
         <Statistics stats={statisticalData} />
       </LessonContainer>
-      <LessonContainer title="Friend List" paddings={30}>
+      <LessonContainer title="Friend List">
         <FriendList friends={friends} />
       </LessonContainer>
-      <LessonContainer title="Transaction History" paddings={30}>
+      <LessonContainer title="Transaction History">
         <TransactionHistory items={transactions} />
       </LessonContainer>
     </div>

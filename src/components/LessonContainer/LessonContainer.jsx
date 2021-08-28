@@ -1,14 +1,11 @@
-import css from "./LessonContainer.module.css";
 import PropTypes from "prop-types";
+import { Container, Title } from "./LessonContainer.styled";
 export const LessonContainer = ({ title, paddings, children }) => {
   return (
-    <div
-      className={css.container}
-      style={{ paddingTop: paddings, paddingBottom: paddings }}
-    >
-      <h2 className={css.title}>{title}</h2>
+    <Container>
+      <Title>{title}</Title>
       {children}
-    </div>
+    </Container>
   );
 };
 

@@ -1,63 +1,66 @@
-.profile {
+import styled from "@emotion/styled";
+
+export const ProfileContainer = styled.div`
   width: 210px;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 0px 5px #777;
   border-radius: 5px;
   overflow: hidden;
-}
-.description {
+`;
+export const Description = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
   padding: 20px;
-}
-.avatar {
+`;
+
+export const Avatar = styled.img`
   width: 70px;
   height: 70px;
   border-radius: 50%;
-}
+`;
 
-.name {
+export const Name = styled.p`
   font-weight: 700;
   font-size: 18px;
   margin-top: 20px;
-}
-.tag {
+`;
+export const Tag = styled.p`
   font-size: 14px;
   color: #555;
   margin-top: 10px;
-}
-.location {
+`;
+export const Location = styled.p`
   font-size: 14px;
   color: #555;
   margin-top: 10px;
-}
+`;
 
-.stats {
+export const Stats = styled.ul`
   display: flex;
   background-color: #eee;
-}
 
-.stats li {
-  width: 70px;
-  border: 1px solid #ddd;
-  padding: 10px;
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
+  li {
+    width: 70px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+`;
 
-.label {
+export const Label = styled.span`
   display: block;
   text-align: center;
   font-size: 12px;
   color: #555;
-}
-.quantity {
+`;
+export const Quantity = styled.span`
   display: block;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   margin-top: 5px;
-}
+`;
