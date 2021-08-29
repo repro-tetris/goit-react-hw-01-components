@@ -1,6 +1,6 @@
 import "./App.css";
 import { Profile } from "./components/Profile/Profile";
-import { LessonContainer } from "./components/LessonContainer/LessonContainer";
+import { Container } from "./components/Container/Container";
 import { Statistics } from "./components/Statistics/Statistics";
 import { FriendList } from "./components/FriendList/FriendList";
 import { TransactionHistory } from "./components/TransactionHistory/TransactionHistory";
@@ -12,7 +12,7 @@ import transactions from "./data/transactions.json";
 function App() {
   return (
     <div className="App">
-      <LessonContainer title="Social Profile">
+      <Container title="Social Profile">
         <Profile
           name={user.name}
           tag={user.tag}
@@ -20,17 +20,17 @@ function App() {
           avatar={user.avatar}
           stats={user.stats}
         />
-      </LessonContainer>
-      <LessonContainer title="Statistic">
+      </Container>
+      <Container title="Statistic">
         <Statistics title="Upload stats" stats={statisticalData} />
         <Statistics stats={statisticalData} />
-      </LessonContainer>
-      <LessonContainer title="Friend List">
+      </Container>
+      <Container title="Friend List">
         <FriendList friends={friends} />
-      </LessonContainer>
-      <LessonContainer title="Transaction History">
+      </Container>
+      <Container title="Transaction History">
         <TransactionHistory items={transactions} />
-      </LessonContainer>
+      </Container>
     </div>
   );
 }
