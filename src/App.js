@@ -12,7 +12,7 @@ import transactions from "./transactions.json";
 function App() {
   return (
     <div className="App">
-      <LessonContainer title="Social Profile">
+      <LessonContainer title="Social Profiles">
         <Profile
           name={user.name}
           tag={user.tag}
